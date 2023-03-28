@@ -9,9 +9,9 @@ url del menú del sitio para obtener los productos.
 
 ## Comandos para correr la aplicación
 ```sh
-git clone git@github.com:adcc662/Wallmart-Scrapy.git
-cd Wallmart-scrapy
-docker build -t walmart_menu .
-docker run -v $(pwd):/app walmart_menu
+git clone git@github.com:adcc662/Extract_data_from_url.git
+cd Extract_data_from_url
+docker build -t product-extractor .
+docker run -p 8000:8000 product-extractor
 ```
 
